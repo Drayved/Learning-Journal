@@ -219,10 +219,49 @@ footer{
 
 /* Media querys  */
 
+@media (max-width: 500px){
+    .toolbar-title{
+        width: fit-content;
+        padding-left: 2em;
+        
+    }
+
+    .journal-header{
+        margin-top: 3.125rem;
+        height:55%;
+        padding-right: 70px;
+        
+    }
+
+    .about-me{
+        margin-left: 70px;
+        text-align: center;
+    }
+}
+
 @media (max-width: 660px){
     .toolbar-btn{
-        padding-right:.5em ;
+        padding-right:0;
+        padding-left: 0;
+        
     }
+}
+
+@media (max-width: 425px){
+    .toolbar-title{
+        font-size: 14px;
+        padding-top: 7px;
+    }
+
+    .toolbar-btn{
+        font-size: 13px;
+        padding-top: 25px
+    }
+
+    .journal-header{
+        height: 58%;
+    }
+   
 }
 
 @media (min-width: 850px){
