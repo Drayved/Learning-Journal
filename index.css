@@ -14,7 +14,7 @@
 }
 
 .toolbar-title{
-    min-width: 60vw;
+    width: fit-content;
     padding-left: 4em;
     color: black;
     text-decoration: none;
@@ -35,7 +35,7 @@
 /* Header */
 
 .home-header{
-    background-image: url('images/laptop.jpg');
+    background-image: url('images/binary.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,6 +130,8 @@ button{
     display: flex;
     border-bottom: 1px solid black;
 }
+
+
 
 /* footer */
 
@@ -343,18 +345,13 @@ footer{
     }
 }
 
-@media (min-width: 1975px){
+@media (min-width: 1970px){
     .about-header-container{
         max-width: 50%;
     }
 
     .about-header{
-        margin-left: 500px;
-    }
-
-    .about-header-title,
-    .about-header-text{
-        margin-right:31.25rem ;
+        margin-left: 31.25rem;
     }
 
     .about-me{
