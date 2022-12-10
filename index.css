@@ -1,0 +1,321 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* top toolbar */
+
+.toolbar{
+    display: flex;
+    position: absolute;
+    top: 1px;
+    justify-content: space-between;
+    width: 100%;
+    max-height:1.25rem;
+}
+
+.toolbar-title{
+    min-width: 60vw;
+    padding-left: 4em;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.journal-icon{
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
+.icon-container{
+    position: relative;
+    bottom: 2.5rem;
+    right: 1.875rem;
+}
+
+/* Header */
+
+.home-header{
+    background-image: url('images/laptop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+    height: 45%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 3.125em;
+    padding-right: 1em;
+}
+
+.header-title{
+    font-size: 2.3rem;
+    margin-bottom: .3em;
+}
+
+.header-text{
+    margin-bottom: 3.125em;
+    min-width: 15.625rem; 
+    max-width: 40.625rem;
+}
+
+.blog-title{
+    margin: 0.5em 0 0.35em 0;
+    font-size: 1.5em;
+}
+
+
+
+/* main content */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+}
+
+main,
+.hidden-blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+}
+
+.container{
+    width: 100%;
+    max-width: 56.25em;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+p{
+    line-height: 1.2;
+    margin-bottom:1em ;
+    margin-top: 0;
+}
+
+img{
+    width: 100%;
+    margin-bottom:1em ;
+    height: 17.5em;
+}
+
+
+
+/* buttons */
+
+button{
+    cursor: pointer;
+}
+
+.toolbar-btn{
+    border:none;
+    background-color: white;
+    text-transform:uppercase ;
+    font-weight: bold;
+    padding-top: 1.3em;
+    padding-right: 2.5em;
+} 
+
+
+
+.view-more-btn{
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+    margin: 1.5em auto 4em auto;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1.25rem 0; 
+}
+
+/* About pages */
+
+.about-header{
+    padding-top: 5em 1em 0 3.125em;
+    margin-top: 4em;
+    color: black;
+}
+
+.about-img{
+    border-radius:50% ;
+    height: 12.5em;
+    max-width: 12.5em;
+    margin-left: 4.375em;
+}
+
+.about-header-title,
+.about-header-text{
+    max-width: 28.125em;
+    text-align: left;
+    padding-left: 4.375rem;
+    padding-bottom: 1.25rem;
+}
+
+.about-header-text{
+    margin-bottom: 3.125em;
+}
+
+.about-me{
+    margin-top: none;
+    width: 70%;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-title,
+.about-me-text{
+    text-align: left;
+}
+
+.about-me-text{
+    padding-bottom: 1.25em;
+}
+
+.recent-post{
+    padding-top: 1.25em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* learning journal*/
+
+.journal-header{
+    height: 40%;
+    margin-top: 8.125rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    line-height: 1.4;
+}
+
+.journal-main-img{
+    position: relative;
+    bottom: 300px;
+    padding-bottom: none;
+    margin-top:6.25rem;
+}
+
+.journal-me{
+    margin-top: -15.625rem;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/* Media querys  */
+
+@media (max-width: 660px){
+    .toolbar-btn{
+        padding-right:.5em ;
+    }
+}
+
+@media (min-width: 850px){
+    .about-header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-between;
+    }
+
+    .journal-main-img{
+        height: 60%;
+        margin-top: 0px;
+    }
+
+    .journal-me{
+        margin-top: -9.375rem;
+    }
+
+    .about-header{
+        margin: 5em auto;
+    }
+
+    .about-header-title,
+    .about-header-text{
+        position: relative;
+        bottom: 170px;
+        left: 60px;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 90%;
+        padding-left: 10.625rem;
+        margin-right:1em;
+    }
+
+    .about-me{
+        position: relative;
+        bottom: 100px;
+    }
+}
+
+@media (min-width: 1370px){
+    
+    .about-header-container{
+        width: 70%;
+        margin-right: 23.3125rem;
+    }
+    .about-me{
+        width: 50%;
+    }
+
+    .about-header{
+        text-align: left;
+        margin-left: 15.625rem;
+    }
+
+    .about-header-title,
+    .about-header-text{
+        margin-right:1rem ;
+    }
+}
+
+@media (min-width: 1975px){
+    .about-header-container{
+        max-width: 50%;
+    }
+
+    .about-header{
+        margin-left: 500px;
+    }
+
+    .about-header-title,
+    .about-header-text{
+        margin-right:31.25rem ;
+    }
+
+    .about-me{
+        width: 40%;
+    }
+}
+
+@media (min-width: 2300px){
+    .about-me{
+        width: 35%;
+    }
+
+    .about-header{
+        margin-left: 46.875rem;
+    }
+}
+
+
+ 
+
+
+
