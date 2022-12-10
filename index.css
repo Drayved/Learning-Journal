@@ -218,6 +218,42 @@ footer{
 }
 
 /* Media querys  */
+@media (max-height: 1200px){
+    .journal-header-text{
+        margin-bottom: 9.375rem;
+    }
+
+    .journal-me{
+        padding-top: 25rem;
+    }
+
+    .journal-main-img{
+        display: none;
+    }
+
+
+}
+
+
+
+@media (max-width: 425px){
+    .toolbar-title{
+        font-size: 0.875rem;
+        padding-top: 0.4375rem;
+    }
+
+    .toolbar-btn{
+        font-size: 0.8125rem;
+        padding-top: 1.5625rem;
+    }
+
+    .journal-header{
+        height: 58%;
+    }
+
+    
+   
+}
 
 @media (max-width: 500px){
     .toolbar-title{
@@ -229,12 +265,12 @@ footer{
     .journal-header{
         margin-top: 3.125rem;
         height:55%;
-        padding-right: 70px;
+        padding-right: 4.35rem;
         
     }
 
     .about-me{
-        margin-left: 70px;
+        margin-left: 4.35rem;
         text-align: center;
     }
 }
@@ -245,23 +281,6 @@ footer{
         padding-left: 0;
         
     }
-}
-
-@media (max-width: 425px){
-    .toolbar-title{
-        font-size: 14px;
-        padding-top: 7px;
-    }
-
-    .toolbar-btn{
-        font-size: 13px;
-        padding-top: 25px
-    }
-
-    .journal-header{
-        height: 58%;
-    }
-   
 }
 
 @media (min-width: 850px){
